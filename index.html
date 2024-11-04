@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egypt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+      <div class="container-fluid">
+        <img src="Images/Logo.png" alt="egypt-logo" width="200px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 fw-bold fs-5">
+            <li class="nav-item ms-4">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+              <li class="nav-item ms-4">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown border border-2 border-primary rounded-3 ms-4">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Trips
+              </a>
+              <ul class="dropdown-menu fs-5 mt-3">
+                <li><a class="dropdown-item" href="#">Cairo</a></li>
+                <li><a class="dropdown-item" href="#">Alex</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">luxor</a></li>
+                <li><a class="dropdown-item" href="#">Aswan</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hurghada</a></li>
+                <li><a class="dropdown-item" href="#">Sharm El-Sheikh</a></li>
+              </ul>
+            </li>
+              <li class="nav-item ms-4">
+              <a class="nav-link active" href="#">News</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control  fs-5 rounded-0 rounded-start border-primary border-end-0" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary me-3 fs-5 rounded-0 rounded-end" type="submit">Search</button>
+            <button type="button" class="btn btn-outline-primary fs-5 me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">login</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-primary text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com">
+                        <label for="floatingInput1">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword1" placeholder="Password">
+                        <label for="floatingPassword1">Password</label>
+                      </div>
+                      <div class="form-check form-switch mt-4">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Remember Me</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="icon">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel" style="margin-top: 4rem;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Images/Cairo.png" class="d-block w-100 img-fluid" alt="Cairo">
+          <div class="carousel-caption px-2 rounded-3">
+            <h2 class="fs-1 text-uppercase">Cairo</h2>
+            <p class="fs-5 text-lowercase">The heart of Egypt's culture</p>
+            <button class="btn btn-outline-light">Visit Us</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10500">
+          <img src="Images/Giza.png" class="d-block w-100 img-fluid" alt="Giza">
+          <div class="carousel-caption px-2 rounded-3">
+            <h2 class="fs-1 text-uppercase">Giza</h2>
+            <p class="fs-5 text-lowercase">Majestic pyramids and ancient history</p>
+            <button class="btn btn-outline-light">Visit Us</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="11000">
+          <img src="Images/Luxor.png" class="d-block w-100 img-fluid" alt="Luxor">
+          <div class="carousel-caption px-2 rounded-3">
+            <h2 class="fs-1 text-uppercase">Luxor</h2>
+            <p class="fs-5 text-lowercase">City of temples and pharaohs</p>
+            <button class="btn btn-outline-light">Visit Us</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="11500">
+          <img src="Images/Alexandria.png" class="d-block w-100 img-fluid" alt="Alexandria">
+          <div class="carousel-caption px-2 rounded-3">
+            <h2 class="fs-1 text-uppercase">Alexandria</h2>
+            <p class="fs-5 text-lowercase">Famous library and beautiful beaches</p>
+            <button class="btn btn-outline-light">Visit Us</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid" style="background-color: #ffc999;">
+      <h2 class="pt-4 ps-4 text-uppercase text-dark fw-bold">welcome</h2>
+      <p class="px-4 fs-5 text-black-50">Welcome to Egypt, a land where the echoes of ancient civilizations blend with the vibrant pulse of modern life. 
+        From the majestic pyramids of Giza and the grand temples of Luxor to the bustling streets of Cairo and the serene waters of the Nile, 
+        Egypt offers a journey through time, culture, and breathtaking landscapes. Here, every corner tells a story, and every visitor is invited to be part of its living history.</p>
+      <button class="btn btn-light text-dark ms-4 mb-4 fs-5 px-4">Learn More</button>
+    </div>
+    <div class="container-fluid">
+      <h2 class="text-center pt-5 pb-5 text-capitalize main-title fs-1">popular destination in egypt</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Cairo City
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              Cairo, Egypt’s vibrant capital, is a bustling metropolis where ancient history meets modern life. Explore the Pyramids, 
+              the Sphinx, the bustling bazaars, and enjoy the stunning Nile views.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Giza City
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              Giza is home to Egypt’s most iconic landmarks—the Great Pyramids and the Sphinx. A must-visit destination for history lovers, 
+              offering a surreal glimpse into the ancient world with breathtaking desert landscapes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Luxor City
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              Luxor, often called the world’s greatest open-air museum, is home to the magnificent temples of Karnak and Luxor, and the Valley of the Kings. 
+              A treasure trove of ancient Egyptian history, culture, and breathtaking monuments.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Alexandria City
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              Alexandria, Egypt’s Mediterranean jewel, is known for its stunning coastline, ancient libraries, and Greco-Roman history. 
+              Stroll along the Corniche, visit historical sites, and enjoy its rich, multicultural heritage.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Hurghada City
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              Hurghada is a premier Red Sea resort destination, famed for its crystal-clear waters, colorful coral reefs, and thriving marine life. 
+              It offers world-class diving, snorkeling, and endless beach relaxation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-4 pb-4 bg-opacity-50 px-0 rounded-2" style="width: 98%; background-color: #ffc999;">
+      <div class="container-fluid text-center pt-3 pb-3 text-dark rounded-top" style="background-color: #ffad66;">
+        <h2 class="text-capitalize fw-bold">translate from arabic to english</h2>
+      </div>
+      <div class="container-fluid px-4">
+        <p class="pt-3 fs-4 mb-3 text-capitalize">write and translate <a class="text-decoration-none text-light" href="#">press here</a></p>
+        <button type="button" class="btn btn-primary mb-3 fs-5" style="background-color: #ffa04d; border: none;" data-bs-toggle="modal" data-bs-target="#translate" data-bs-toggle="tooltip" data-bs-placement="top" title="copy text to clipboard">
+          Copy
+        </button>
+        <div class="modal fade" id="translate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Translate</h5>
+              </div>
+              <div class="modal-body text-end">
+                تم نسخ النص
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="form-floating">
+          <textarea class="form-control fs-5" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea" class="fs-5">Translate</label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid pb-4 px-0 rounded-2" style="width: 98%; background-color: #ffc999;">
+      <div class="container-fluid text-center pt-3 pb-3 text-dark rounded-top" style="background-color: #ffad66;">
+        <h2 class="text-capitalize fw-bold">translate from arabic to french</h2>
+      </div>
+      <div class="container-fluid px-4">
+        <p class="pt-3 fs-4 mb-3 text-capitalize">write and translate <a class="text-decoration-none text-light" href="#">press here</a></p>
+        <button type="button" class="btn btn-primary mb-3 fs-5" style="background-color: #ffa04d; border: none;" data-bs-toggle="modal" data-bs-target="#translate" data-bs-toggle="tooltip" data-bs-placement="top" title="copy text to clipboard">
+          Copy
+        </button>
+        <div class="modal fade" id="translate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Translate</h5>
+              </div>
+              <div class="modal-body text-end">
+                تم نسخ النص
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="form-floating">
+          <textarea class="form-control fs-5" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea" class="fs-5">Traduire</label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid pb-4 px-0 rounded-2" style="width: 98%;background-color: #ffc999;">
+      <div class="container-fluid text-center pt-3 pb-3 text-dark rounded-top" style="background-color: #ffad66;">
+        <h2 class="text-capitalize fw-bold">translate from arabic to german</h2>
+      </div>
+      <div class="container-fluid px-4">
+        <p class="pt-3 fs-4 mb-3 text-capitalize">write and translate <a class="text-decoration-none text-light" href="#">press here</a></p>
+        <button type="button" class="btn btn-primary mb-3 fs-5" style="background-color: #ffa04d; border: none;" data-bs-toggle="modal" data-bs-target="#translate" data-bs-toggle="tooltip" data-bs-placement="top" title="copy text to clipboard">
+          Copy
+        </button>
+        <div class="modal fade" id="translate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Translate</h5>
+              </div>
+              <div class="modal-body text-end">
+                تم نسخ النص
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="form-floating">
+          <textarea class="form-control fs-5" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea" class="fs-5">Übersetzen</label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid Hatshepsut-Temple"></div>
+    <div class="container-fluid text-center pt-5 pb-5 text-dark">
+      <h2 class="text-capitalize main-title fs-1">popular destenation in egypt</h2>
+    </div>
+    <div class="container pb-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5">
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/cairo card.png" class="card-img-top" alt="cairo" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Cairo</h3>
+              <p class="card-text">A vibrant city steeped in history, offering rich culture, museums, and lively markets.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/giza card.png" class="card-img-top" alt="giza" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">giza</h3>
+              <p class="card-text">Famous for its majestic pyramids and the Great Sphinx, reflecting ancient Egypt's glory.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/Luxor.png" class="card-img-top" alt="Luxor" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Luxor</h3>
+              <p class="card-text">The ancient capital of Egypt, featuring the Valley of the Kings and Karnak Temple.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/aswan.png" class="card-img-top" alt="aswan" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">aswan</h3>
+              <p class="card-text">A city on the banks of the Nile, famous for the High Dam and Philae Temple.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/Alexandria card.png" class="card-img-top" alt="Alexandria" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Alexandria</h3>
+              <p class="card-text">Coastal city with beautiful beaches and landmarks like the Bibliotheca Alexandrina.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/Sharm El Sheikh.png" class="card-img-top" alt="Sharm El Sheikh" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Sharm El Sheikh</h3>
+              <p class="card-text">A popular resort town on the Red Sea, known for its beautiful beaches and diving activities.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/Hurghada.png" class="card-img-top" alt="Hurghada" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Hurghada</h3>
+              <p class="card-text">A coastal city offering diving and water sports, making it a favorite destination for tourists.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/Dahab.png" class="card-img-top" alt="Dahab" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Dahab</h3>
+              <p class="card-text">A tranquil town on the Red Sea, known for its diving spots and stunning natural scenery.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-overlay">
+            <img src="Images/Siwa Oasis.png" class="card-img-top" alt="Siwa Oasis" height="450">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Siwa Oasis</h3>
+              <p class="card-text">A unique oasis located in the Western Desert, renowned for its natural beauty.</p>
+              <a href="#" class="btn text-light d-block" style="background-color: #ffa04d; border: none;">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid marsa-alam"></div>
+    <div class="container-fluid text-center pt-5 pb-5 text-dark">
+      <h2 class="text-capitalize main-title fs-1">Thanks For</h2>
+    </div>
+      <div class="container pb-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5">
+          <div class="col">
+            <div class="team-card card text-black rounded-4 border-1">
+              <img src="Images/user.png" class="card-img rounded-4 team-card-img" alt="user">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase ps-4">all thanks and appreciation</h5>
+                <p class="card-text ps-4 pt-1 fs-6"><i class="fa-regular fa-clock"></i>July 3, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="team-card card text-black rounded-4 border-1">
+              <img src="Images/user.png" class="card-img rounded-4 team-card-img" alt="user">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase ps-4">all thanks and appreciation</h5>
+                <p class="card-text ps-4 pt-1 fs-6"><i class="fa-regular fa-clock"></i>July 3, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="team-card card text-black rounded-4 border-1">
+              <img src="Images/user.png" class="card-img rounded-4 team-card-img" alt="user">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase ps-4">all thanks and appreciation</h5>
+                <p class="card-text ps-4 pt-1 fs-6"><i class="fa-regular fa-clock"></i>July 3, 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center pb-5 text-dark">
+        <h2 class="text-capitalize main-title fs-1">egypt news</h2>
+      </div>
+      <div class="container-fluid pb-5">
+        <div class="podcast card mb-3 overflow-hidden rounded-4" style="max-width: 200vh;">
+          <div class="row g-0">
+            <div class="podcast-img col-lg-4 text-center">
+              <img src="Images/9020e8f7d5cfee85985630c2e7e63160.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-8 p-lg-5">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize fs-1">podcast title</h2>
+                <p class="podcast-line card-text pt-2"><i class="fa-regular fa-calendar-days"></i> sun, jul 3th 2024</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Numquam necessitatibus cum cumque beatae, tempore omnis. Eum perferendis libero 
+                  ipsum reiciendis mollitia! Vitae, adipisci tenetur recusandae praesentium explicabo 
+                  est quidem sint ut ducimus officiis similique commodi obcaecati unde inventore quis placeat, 
+                  repellendus consequatur ea accusamus! Molestias accusantium dolor, eos voluptates soluta dicta et 
+                  laudantium magnam, aut odit quidem, doloremque dolorem.</p>
+              </div>
+              <div class="container-fluid podcast-btn pb-5 d-flex justify-content-lg-start justify-content-center flex-wrap">
+                <button class="mb-2"><i class="fa-solid fa-tag"></i> podcast</button>
+                <button class="mb-2"><i class="fa-solid fa-clock"></i> 60 mins</button>
+                <button class="mb-2"><i class="fa-solid fa-play"></i> play podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="podcast card mb-3 overflow-hidden rounded-4" style="max-width: 200vh;">
+          <div class="row g-0">
+            <div class="podcast-img2 col-lg-4 text-center">
+              <img src="Images/ea77e6b28d3c330c8da3e2c565cb3da3.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-8 p-lg-5">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize fs-1">podcast title</h2>
+                <p class="podcast-line card-text pt-2"><i class="fa-regular fa-calendar-days"></i> sun, jul 3th 2024</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Numquam necessitatibus cum cumque beatae, tempore omnis. Eum perferendis libero 
+                  ipsum reiciendis mollitia! Vitae, adipisci tenetur recusandae praesentium explicabo 
+                  est quidem sint ut ducimus officiis similique commodi obcaecati unde inventore quis placeat, 
+                  repellendus consequatur ea accusamus! Molestias accusantium dolor, eos voluptates soluta dicta et 
+                  laudantium magnam, aut odit quidem, doloremque dolorem.</p>
+              </div>
+              <div class="container-fluid podcast-btn pb-5 d-flex justify-content-lg-start justify-content-center flex-wrap">
+                <button class="mb-2"><i class="fa-solid fa-tag"></i> podcast</button>
+                <button class="mb-2"><i class="fa-solid fa-clock"></i> 60 mins</button>
+                <button class="mb-2"><i class="fa-solid fa-play"></i> play podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="podcast card mb-3 overflow-hidden rounded-4" style="max-width: 200vh;">
+          <div class="row g-0">
+            <div class="podcast-img col-lg-4 text-center">
+              <img src="Images/0fea6a748ff0d2879c64a29d359f63b8.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-8 p-lg-5">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize fs-1">podcast title</h2>
+                <p class="podcast-line card-text pt-2"><i class="fa-regular fa-calendar-days"></i> sun, jul 3th 2024</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Numquam necessitatibus cum cumque beatae, tempore omnis. Eum perferendis libero 
+                  ipsum reiciendis mollitia! Vitae, adipisci tenetur recusandae praesentium explicabo 
+                  est quidem sint ut ducimus officiis similique commodi obcaecati unde inventore quis placeat, 
+                  repellendus consequatur ea accusamus! Molestias accusantium dolor, eos voluptates soluta dicta et 
+                  laudantium magnam, aut odit quidem, doloremque dolorem.</p>
+              </div>
+              <div class="container-fluid podcast-btn pb-5 d-flex justify-content-lg-start justify-content-center flex-wrap">
+                <button class="mb-2"><i class="fa-solid fa-tag"></i> podcast</button>
+                <button class="mb-2"><i class="fa-solid fa-clock"></i> 60 mins</button>
+                <button class="mb-2"><i class="fa-solid fa-play"></i> play podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="podcast card mb-3 overflow-hidden rounded-4" style="max-width: 200vh;">
+          <div class="row g-0">
+            <div class="podcast-img2 col-lg-4 text-center">
+              <img src="Images/311fe6d78c910212a49ba08e663a7434.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-8 p-lg-5">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize fs-1">podcast title</h2>
+                <p class="podcast-line card-text pt-2"><i class="fa-regular fa-calendar-days"></i> sun, jul 3th 2024</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Numquam necessitatibus cum cumque beatae, tempore omnis. Eum perferendis libero 
+                  ipsum reiciendis mollitia! Vitae, adipisci tenetur recusandae praesentium explicabo 
+                  est quidem sint ut ducimus officiis similique commodi obcaecati unde inventore quis placeat, 
+                  repellendus consequatur ea accusamus! Molestias accusantium dolor, eos voluptates soluta dicta et 
+                  laudantium magnam, aut odit quidem, doloremque dolorem.</p>
+              </div>
+              <div class="container-fluid podcast-btn pb-5 d-flex justify-content-lg-start justify-content-center flex-wrap">
+                <button class="mb-2"><i class="fa-solid fa-tag"></i> podcast</button>
+                <button class="mb-2"><i class="fa-solid fa-clock"></i> 60 mins</button>
+                <button class="mb-2"><i class="fa-solid fa-play"></i> play podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="podcast card mb-3 overflow-hidden rounded-4" style="max-width: 200vh;">
+          <div class="row g-0">
+            <div class="podcast-img col-lg-4 text-center">
+              <img src="Images/547520353a056de71705005e86882209.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-8 p-lg-5">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize fs-1">podcast title</h2>
+                <p class="podcast-line card-text pt-2"><i class="fa-regular fa-calendar-days"></i> sun, jul 3th 2024</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Numquam necessitatibus cum cumque beatae, tempore omnis. Eum perferendis libero 
+                  ipsum reiciendis mollitia! Vitae, adipisci tenetur recusandae praesentium explicabo 
+                  est quidem sint ut ducimus officiis similique commodi obcaecati unde inventore quis placeat, 
+                  repellendus consequatur ea accusamus! Molestias accusantium dolor, eos voluptates soluta dicta et 
+                  laudantium magnam, aut odit quidem, doloremque dolorem.</p>
+              </div>
+              <div class="container-fluid podcast-btn pb-5 d-flex justify-content-lg-start justify-content-center flex-wrap">
+                <button class="mb-2"><i class="fa-solid fa-tag"></i> podcast</button>
+                <button class="mb-2"><i class="fa-solid fa-clock"></i> 60 mins</button>
+                <button class="mb-2"><i class="fa-solid fa-play"></i> play podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="podcast card mb-3 overflow-hidden rounded-4" style="max-width: 200vh;">
+          <div class="row g-0">
+            <div class="podcast-img2 col-lg-4 text-center">
+              <img src="Images/670f0c567ed64abcd47cfe43dbdc3ed4.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-8 p-lg-5">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize fs-1">podcast title</h2>
+                <p class="podcast-line card-text pt-2"><i class="fa-regular fa-calendar-days"></i> sun, jul 3th 2024</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Numquam necessitatibus cum cumque beatae, tempore omnis. Eum perferendis libero 
+                  ipsum reiciendis mollitia! Vitae, adipisci tenetur recusandae praesentium explicabo 
+                  est quidem sint ut ducimus officiis similique commodi obcaecati unde inventore quis placeat, 
+                  repellendus consequatur ea accusamus! Molestias accusantium dolor, eos voluptates soluta dicta et 
+                  laudantium magnam, aut odit quidem, doloremque dolorem.</p>
+              </div>
+              <div class="container-fluid podcast-btn pb-5 d-flex justify-content-lg-start justify-content-center flex-wrap">
+                <button class="mb-2"><i class="fa-solid fa-tag"></i> podcast</button>
+                <button class="mb-2"><i class="fa-solid fa-clock"></i> 60 mins</button>
+                <button class="mb-2"><i class="fa-solid fa-play"></i> play podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid text-center pb-5 text-dark">
+      <h2 class="text-capitalize main-title fs-1">join us</h2>
+    </div>
+    <div class="container pb-5 text-center">
+      <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-4">
+        <div class="col d-flex justify-content-center">
+          <div class="card border-0 shadow" style="width: 250px; height: 220px;">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">follow</h3>
+              <img src="Images/Facebook.png" alt="Facebook" class="img-fluid social-img">
+              <p class="card-text social-link"><a href="#"class="text-decoration-none text-dark">get link</a><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card border-0 shadow" style="width: 250px; height: 220px;">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">follow</h3>
+              <img src="Images/linkedin.png" alt="linkedin" class="img-fluid social-img">
+              <p class="card-text social-link"><a href="#"class="text-decoration-none text-dark">get link</a><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card border-0 shadow"style="width: 250px; height: 220px;" >
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">follow</h3>
+              <img src="Images/Whatsapp.png" alt="Whatsapp" class="img-fluid social-img">
+              <p class="card-text social-link"><a href="#"class="text-decoration-none text-dark">get link</a><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card border-0 shadow" style="width: 250px; height: 220px;">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">follow</h3>
+              <img src="Images/Instagram.png" alt="Instagram" class="img-fluid social-img">
+              <p class="card-text social-link"><a href="#"class="text-decoration-none text-dark">get link</a><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer container-fluid p-5">
+        <div class="row row-cols-lg-3 row-cols-1 g-3">
+          <div class="col d-flex justify-content-lg-start justify-content-center">
+            <div class="footer-card text-lg-start text-center">
+              <img src="Images/title.png" alt="egypt" class="img-fluid m-lg-0 m-auto">
+              <p>Land of Civilization</p>
+              <i class="first fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <p>copyright &copy; 2024 . all right reserved by developer</p>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-lg-start justify-content-center">
+            <div class="footer-card text-lg-start text-center" style="width: 350px;">
+              <ul class=" d-flex justify-content-between list-unstyled fs-4 text-light footer-nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Trips</li>
+                <li>News</li>
+              </ul>
+              <p class="m-0">
+                Egypt is the cradle of civilization, blending ancient history with modern progress. 
+                Home to the Great Pyramids, Sphinx, and temples of Luxor, it preserves the legacy of one of humanity’s oldest cultures. 
+                Egypt is also a vibrant hub for art, literature, and science in the Middle East, with Cairo as a major city. 
+                The Nile River brings life to Egypt’s lands, shaping its past and present. With a rich heritage and evolving society, 
+                Egypt remains a key cultural and economic center in the Arab world.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-lg-start justify-content-center">
+            <div class="footer-card text-lg-start text-center">
+              <h3 class="main-title fs-1 text-light">Log in</h3>
+              <form>
+                <div class="form-floating mb-2 email ">
+                  <input type="email" class="form-control text-light ps-0 pb-0 fs-6" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating password">
+                  <input type="password" class="form-control text-light ps-0 pb-0 fs-6" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap form-content">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Keep me logged in
+                    </label>
+                  </div>
+                  <a href="#">forget password?</a>
+                </div>
+                <button class="form-button">Log in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
